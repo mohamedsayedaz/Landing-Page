@@ -59,6 +59,9 @@ main {
 .nav-link:hover{
     color: #a9a7a7;
 }
+.navbar-brand:hover{
+    color: #a9a7a7;
+}
 .main-hero {
     min-height: 40vh;
     padding-top: 3em;

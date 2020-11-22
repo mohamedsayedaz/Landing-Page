@@ -1,3 +1,4 @@
+/*eslint-env es6*/
 //Get The All Section In The Landing Page
 const my_sections = document.querySelectorAll("section");
 //Create The Document Fragment
@@ -18,8 +19,9 @@ for(let i=0;i<my_sections.length;i++){
     //Add The caption of each link
     nav_link.appendChild(link_txt);
     //Add The Scroll Smooth Event To The Link
-    nav_li.addEventListener("click",function(){
-        my_sections[i].scrollIntoView();
+    nav_li.addEventListener("click",function(e){
+       e.preventDefault();
+       my_sections[i].scrollIntoView({behavior:"smooth"});
     });
     //Add the link in the list item
     nav_li.appendChild(nav_link);
