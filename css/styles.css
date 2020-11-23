@@ -62,6 +62,9 @@ main {
 .navbar-brand:hover{
     color: #a9a7a7;
 }
+#toggler-icon{
+    color:white;
+}
 .main-hero {
     min-height: 40vh;
     padding-top: 3em;
